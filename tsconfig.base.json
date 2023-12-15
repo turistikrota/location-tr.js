@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "esnext", // veya istediğiniz bir hedef sürüm
+      "moduleResolution": "node",
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "resolveJsonModule": true
+    }
+  }
+  

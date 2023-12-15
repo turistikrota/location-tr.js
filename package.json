@@ -1,0 +1,33 @@
+{
+    "name": "@turistikrota/location-tr",
+    "version": "0.0.6",
+    "description": "Turistikrota Turkish Location Package",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/mjs/index.mjs",
+    "types": "./dist/cjs/indexsd.d.ts",
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "build:commonjs": "tsc -p tsconfig.commonjs.json",
+        "build:esm": "tsc -p tsconfig.esm.json",
+        "build": "npm run build:commonjs && npm run build:esm"
+    },
+    "author": "Sami Salih İbrahimbaş <salih@turistikrota.com> (9ssi7)",
+    "license": "Apache-2.0",
+    "bugs": "https://github.com/turistikrota/location-tr.js/issues",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/turistikrota/location-tr.js.git"
+    },
+    "homepage": "https://github.com/turistikrota/location-tr.js",
+    "keywords": [
+        "turistikrota",
+        "location"
+    ],
+    "devDependencies": {
+        "typescript": "^5.3.3"
+    }
+}
