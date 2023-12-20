@@ -6,10 +6,14 @@
       "declarationMap": true,
       "sourceMap": true,
       "esModuleInterop": true,
+      "module": "esnext",
+      "outDir": "./dist",
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "strict": true,
       "resolveJsonModule": true
-    }
+    },
+    "include": ["index.ts"],
+    "exclude": ["node_modules", "dist"]
   }
   
