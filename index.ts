@@ -61,6 +61,26 @@ export const findNearestCityNames = (coordinates: Coordinates, count: number): s
   return Array.from(set).slice(0, count)
 }
 
+export const findCityByCoordinates = (coordinates: Coordinates): City | null => {
+  const city = cities.find((city) => city.coordinates[0] === coordinates[0] && city.coordinates[1] === coordinates[1])
+  if (city) return city
+  return null
+}
+
+export const findNearestCity = (coordinates: Coordinates): City | null => {
+  let nearestCity = null
+  let minDistance = Number.MAX_VALUE
+
+  for (const city of cities) {
+    const distance = getDistanceFromLatLonInKm(coordinates[0], coordinates[1], city.coordinates[0], city.coordinates[1])
+    if (distance < minDistance) {
+      minDistance = distance
+      nearestCity = city
+    }
+  }
+  return nearestCity
+}
+
 export const getCities = () :City[] => cities.sort((a, b) => turkishSorting(a.name, b.name))
 
 export const getDistricts = () :District[] => districts.sort((a, b) => turkishSorting(a.name, b.name))
