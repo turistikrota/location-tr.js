@@ -1,6 +1,6 @@
 {
     "name": "@turistikrota/location-tr",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Turistikrota Turkish Location Package",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
